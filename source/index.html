@@ -9,63 +9,154 @@ cale=1">
   <meta name="description" content="">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-rim-auto-match" content="none">
-  <title>Обо мне</title>
+  <title>Тестовое задание для iDex</title>
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/flexboxgrid2.min.css">
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <nav><a href="index.html">Обо мне</a></nav>
-      <h1>Курс по фронтенду</h1>
-      <p>Описание</p>
-    </div>
+  <header class="header">
+    <h1 class="header__title">Рабочий стол руководителя</h1>
+    <nav class="header__nav">
+      <a href="#" class="header__button button">Dashboard</a>
+      <a href="#" class="header__button button">Team line up</a>
+    </nav>
   </header>
   <main>
-    <section class="whoami">
-      <h2>Обо мне</h2>
-      <p>Lorem ipsum dolor sit amet, ei&nbsp;maiorum luptatum suavitate vim, ex&nbsp;usu tamquam legendos iracundia,
-        ut&nbsp;vel vidit dolorem commune. Ex&nbsp;nobis iuvaret duo, vim sale augue vocibus&nbsp;ne. Ipsum soluta
-        audire ex&nbsp;sea, te&nbsp;affert audiam expetendis eam, facer zril omnium per&nbsp;ex. No&nbsp;facete tamquam
-        eum, usu et&nbsp;partiendo molestiae.</p>
-      <p>Sed tantas audire propriae&nbsp;ad, vis natum porro&nbsp;eu. Vim iusto nominati&nbsp;ne. Augue audire aliquando
-        nam&nbsp;ei, vel id&nbsp;veritus probatus. Pri simul quodsi evertitur&nbsp;at. Nam quem novum&nbsp;ex,
-        ex&nbsp;graecis torquatos ius.</p>
-      <p>Nec at&nbsp;dicat commodo splendide, et&nbsp;nemore argumentum quo, ea&nbsp;<a href="">eos lorem vivendo</a>.
-        No&nbsp;atqui eligendi sit, dissentiunt suscipiantur consequuntur eu&nbsp;duo. Docendi commune pri&nbsp;ea, per
-        mandamus
-        <a href="">consulatu&nbsp;eu</a>, vix no&nbsp;delicata periculis. Vim ex&nbsp;quot labitur, vocibus ceteros
-        nam&nbsp;id.</p>
-      <p>Eu&nbsp;vero errem cum, eu&nbsp;eos porro definiebas, falli intellegat definitionem ad&nbsp;pri. Usu diam
-        purto&nbsp;te, duo ne&nbsp;quem mentitum. Sea periculis democritum&nbsp;ne, mea iisque dolorem
-        maiestatis&nbsp;ei. Id&nbsp;mundi postea voluptua quo, delectus dignissim honestatis his&nbsp;ut, novum aeque
-        electram cu&nbsp;ius. Vel in&nbsp;sint detracto praesent, vim elit mandamus&nbsp;at.</p>
-      <p>Eum eu&nbsp;appetere electram partiendo. Stet quot appareat <a href="">mea&nbsp;ut</a>, eam deleniti voluptua
-        comprehensam&nbsp;id. Idque suscipit ullamcorper vel&nbsp;te, et&nbsp;diam summo vel, vix autem soleat
-        principes&nbsp;no. Eam te&nbsp;tantas decore consequat, mea ei&nbsp;munere doming. Id&nbsp;iudico impedit
-        dissentias has.</p>
+    <section class="schedule">
+      <header class="schedule">
+        <h2 class="schedule__title">График отпусков</h2>
+        <div class="schedule__year pagination">
+          <button type="button" class="pagination__arrow pagination__arrow_prev">&lt;</button>
+          <button type="button" class="pagination__cur">2019</button>
+          <button type="button" class="pagination__arrow pagination__arrow_next">&gt;</button>
+        </div>
+      </header>
+      <table class="schedule__table table">
+        <thead class="table__header">
+          <tr class="table__row table__row_header">
+            <th class="table__th">Фамилия, Имя</th>
+            <th class="table__th">дней</th>
+            <th class="table__th">Янв</th>
+            <th class="table__th">Фев</th>
+            <th class="table__th">Мар</th>
+            <th class="table__th">Апр</th>
+            <th class="table__th">Май</th>
+            <th class="table__th">Июн</th>
+            <th class="table__th">Июл</th>
+            <th class="table__th">Авг</th>
+            <th class="table__th">Сент</th>
+            <th class="table__th">Окт</th>
+            <th class="table__th">Ноя</th>
+            <th class="table__th">Дек</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table__row person">
+            <td class="person__name"></td>
+            <td class="person__limit"></td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_6"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_1"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7 person-month__week_red"></div>
+              <div class="person-month__week person-month__week_1 person-month__week_red person-month__week_red_1">
+              </div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_6"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7 person-month__week_green"></div>
+              <div class="person-month__week person-month__week_4 person-month__week_green person-month__week_green_4">
+              </div>
+              <aside class="person__card card">
+                <div class="card__photo"></div>
+                <div class="card__name">Катерина
+                  Иванова</div>
+                <div class="card__dates card__dates_green">09.08.2019 — 23.08.2019 (14д.)</div>
+                <div class="card__comment">отпуск</div>
+              </aside>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_3"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_6"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_1"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_2"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_5"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_5"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_2"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_3"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_4"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_5"></div>
+            </td>
+            <td class="person__month person-month">
+              <div class="person-month__week person-month__week_5"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_7"></div>
+              <div class="person-month__week person-month__week_5"></div>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+
 
     </section>
-    <section>
-      <h2>Вторая секция</h2>
-      <aside>Lorem ipsum dolor sit amet, ei&nbsp;maiorum luptatum suavitate vim, ex&nbsp;usu tamquam legendos iracundia,
-        ut&nbsp;vel vidit dolorem commune. Ex&nbsp;nobis iuvaret duo, vim sale augue vocibus&nbsp;ne. Ipsum soluta
-        audire ex&nbsp;sea, te&nbsp;affert audiam expetendis eam, facer zril omnium per&nbsp;ex. No&nbsp;facete tamquam
-        eum, usu et&nbsp;partiendo molestiae.</aside>
-      <h3>Было</h3>
-      <ul>
-        <li>tantas</li>
-        <li>electram partiendo</li>
-        <li>nemore argumentum</li>
-      </ul>
-      <h3>Стало</h3>
-      <ul>
-        <li>🔥 tantas</li>
-        <li>🔥 electram partiendo</li>
-        <li>🔥 nemore argumentum</li>
-      </ul>
-    </section>
+
   </main>
 </body>
 

@@ -51,11 +51,9 @@
     "node": "8.11"
   },
   "dependencies": {
-    "flexboxgrid2": "^7.2.1",
     "gh-pages": "^2.1.1",
     "npm": "^6.12.1",
     "path": "^0.12.7",
-    "tipograf": "^2.0.0",
     "typograf": "^6.7.2"
   }
 }
