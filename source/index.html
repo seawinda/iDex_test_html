@@ -14,150 +14,686 @@ cale=1">
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="header__title">Рабочий стол руководителя</h1>
-    <nav class="header__nav">
-      <a href="#" class="header__button button">Dashboard</a>
-      <a href="#" class="header__button button">Team line up</a>
-    </nav>
-  </header>
-  <main>
-    <section class="schedule">
-      <header class="schedule">
-        <h2 class="schedule__title">График отпусков</h2>
-        <div class="schedule__year pagination">
-          <button type="button" class="pagination__arrow pagination__arrow_prev">&lt;</button>
-          <button type="button" class="pagination__cur">2019</button>
-          <button type="button" class="pagination__arrow pagination__arrow_next">&gt;</button>
-        </div>
-      </header>
-      <table class="schedule__table table">
-        <thead class="table__header">
-          <tr class="table__row table__row_header">
-            <th class="table__th">Фамилия, Имя</th>
-            <th class="table__th">дней</th>
-            <th class="table__th">Янв</th>
-            <th class="table__th">Фев</th>
-            <th class="table__th">Мар</th>
-            <th class="table__th">Апр</th>
-            <th class="table__th">Май</th>
-            <th class="table__th">Июн</th>
-            <th class="table__th">Июл</th>
-            <th class="table__th">Авг</th>
-            <th class="table__th">Сент</th>
-            <th class="table__th">Окт</th>
-            <th class="table__th">Ноя</th>
-            <th class="table__th">Дек</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table__row person">
-            <td class="person__name"></td>
-            <td class="person__limit"></td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_6"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_1"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7 person-month__week_red"></div>
-              <div class="person-month__week person-month__week_1 person-month__week_red person-month__week_red_1">
+  <div class="page-wrapper">
+    <header class="page-header header">
+      <h1 class="header__title">Рабочий стол руководителя</h1>
+      <nav class="header__nav">
+        <a href="#" class="header__button button button_active">Dashboard</a>
+        <a href="#" class="header__button button button_inactive">Team line up</a>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="schedule">
+        <table class="schedule__table table">
+          <caption class="table__caption">
+            <div class="schedule-header">
+              <h2 class="schedule-header__title">График отпусков</h2>
+              <div class="schedule-header__year pagination">
+                <button type="button" class="pagination__arrow pagination__arrow_prev"><img src="imgs/ic-left.svg"
+                    alt=""></button>
+                <span class="pagination__cur">2019</span>
+                <button type="button" class="pagination__arrow pagination__arrow_next"><img src="imgs/ic-left.svg"
+                    alt=""></button>
+                </span>
               </div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_6"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7 person-month__week_green"></div>
-              <div class="person-month__week person-month__week_4 person-month__week_green person-month__week_green_4">
-              </div>
-              <aside class="person__card card">
-                <div class="card__photo"></div>
-                <div class="card__name">Катерина
-                  Иванова</div>
-                <div class="card__dates card__dates_green">09.08.2019 — 23.08.2019 (14д.)</div>
-                <div class="card__comment">отпуск</div>
-              </aside>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_3"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_6"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_1"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_2"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_5"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_5"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_2"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_3"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_4"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_5"></div>
-            </td>
-            <td class="person__month person-month">
-              <div class="person-month__week person-month__week_5"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_7"></div>
-              <div class="person-month__week person-month__week_5"></div>
-            </td>
+          </caption>
+          <thead class="table__header">
+            <tr class="table__row table__row_header">
+              <th class="table__th">Фамилия, Имя</th>
+              <th class="table__th">дней</th>
+              <th class="table__th">Янв</th>
+              <th class="table__th">Фев</th>
+              <th class="table__th">Мар</th>
+              <th class="table__th">Апр</th>
+              <th class="table__th">Май</th>
+              <th class="table__th">Июн</th>
+              <th class="table__th">Июл</th>
+              <th class="table__th">Авг</th>
+              <th class="table__th">Сент</th>
+              <th class="table__th">Окт</th>
+              <th class="table__th">Ноя</th>
+              <th class="table__th">Дек</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__row person">
+              <td class="person__name"><img class="person__photo" src="./imgs/photo1.png" width="32" alt="">Иван
+                Иванов</td>
+              <td class="person__limit">14/28</td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div
+                    class="person-month__week person-month__week_7 person-month__week_red person-month__week_start3  person-month__week_end7 show-card">
+                  </div>
+                  <div
+                    class="person-month__week person-month__week_1 person-month__week_red person-month__week_start1  person-month__week_end1 show-card">
+                  </div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_6"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div
+                    class="person-month__week person-month__week_4 person-month__week_green person-month__week_start1  person-month__week_end4 show-card">
+                  </div>
 
-          </tr>
-        </tbody>
-      </table>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_3"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_2"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_2"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_3"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+
+            </tr>
+            <tr class="table__row person">
+              <td class="person__name"><img class="person__photo" src="./imgs/photo2.png" width="32" alt="">Катерина
+              Иванова</td>
+              <td class="person__limit">14/28</td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7">
+                  </div>
+                  <div class="person-month__week person-month__week_1">
+                  </div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_6"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_4">
+                  </div>
+
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_3"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_2"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_2"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_3"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+
+            </tr>
+            <tr class="table__row person">
+              <td class="person__name"><img class="person__photo" src="./imgs/photo1.png" width="32" alt="">Иван
+                Иванов</td>
+              <td class="person__limit">14/28</td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6 person-month__week_green person-month__week_start1 person-month__week_end6 show-card"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1 person-month__week_green person-month__week_start7 person-month__week_end7 show-card"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_1"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_6"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green person-month__week_start1 person-month__week_end7 show-card"></div>
+                  <div class="person-month__week person-month__week_4 person-month__week_green person-month__week_start1 person-month__week_end4 show-card">
+                  </div>
+
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_3 person-month__week_green person-month__week_start5 person-month__week_end7 show-card"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6 person-month__week_green person-month__week_start1 person-month__week_end6 show-card"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_2"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_2"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_red person-month__week_start1 person-month__week_end7 show-card"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_red person-month__week_start3 person-month__week_end5 show-card"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_3"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+            </tr>
+            <tr class="table__row person">
+              <td class="person__name"><img class="person__photo" src="./imgs/photo1.png" width="32" alt="">Иван
+                Иванов</td>
+              <td class="person__limit">14/28</td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_orange person-month__week_start1 person-month__week_end7 show-card"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_1"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_6"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_4"></div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_3"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_2"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_2"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_3"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+
+            </tr>
+            <tr class="table__row person">
+              <td class="person__name"><img class="person__photo" src="./imgs/photo1.png" width="32" alt="">Иван
+                Иванов</td>
+              <td class="person__limit">14/28</td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_3  person-month__week_inactive"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7  person-month__week_inactive"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_1 person-month__week_red person-month__week_start1 person-month__week_end1 show-card">
+                  </div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_6"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green person-month__week_start1 person-month__week_end7 show-card"></div>
+                  <div class="person-month__week person-month__week_4 person-month__week_green person-month__week_start1 person-month__week_end4 show-card">
+                  </div>
+
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_3"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_6"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_1"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_2"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div class="person-month__week person-month__week_7 person-month__week_green show-card"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_2"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_3"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_4"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+              <td class="person__month">
+                <div class="person-month">
+                  <div class="person-month__week person-month__week_5"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_7"></div>
+                  <div class="person-month__week person-month__week_5"></div>
+                </div>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+        <aside class="card">
+          <div class="card__person">
+            <div class="card__photo"><img src="./imgs/photo2.png" width="54" alt=""></div>
+            <div class="card__name">Катерина
+              Иванова</div>
+          </div>
+          <div class="card__info">
+            <div class="card__dates card__dates_green">09.08.2019 — 23.08.2019 (14д.)</div>
+            <div class="card__comment">отпуск</div>
+          </div>
+        </aside>
 
 
-    </section>
+      </section>
+    </main>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    const ready = (callback) => {
+      if (document.readyState != "loading") callback();
+      else document.addEventListener("DOMContentLoaded", callback);
+    }
+    ready(() => {
+      const tipElem = document.querySelector('.card')
 
-  </main>
+      document.querySelectorAll('.show-card').forEach(elem => {
+        elem.addEventListener("mouseover", e => {
+          tipElem.style.display = "block";
+        }, false);
+        elem.addEventListener("mouseout", e => {
+          setTimeout(() => {
+            tipElem.style.display = "none";
+            tipElem.removeAttribute('style');
+          }, 200)
+        }, false);
+        elem.addEventListener('mousemove', e => {
+          var mouseX = e.pageX;
+          var mouseY = e.pageY;
+          tipElem.style.display = "block";
+          tipElem.style.top = mouseY + 10 + "px";
+          tipElem.style.left = mouseX + "px";
+        }, false);
+      });
+    });
+
+  </script>
 </body>
 
 </html>

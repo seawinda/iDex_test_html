@@ -1,0 +1,18 @@
+.pagination__arrow {
+  background: none;
+  border: none;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+
+  &_next {
+    transform: rotateY(180deg);
+  }
+}
+
+.pagination__cur {
+  font-size: 18px;
+  color: #232323;
+  line-height: 24px;
+  margin: 0 6px;
+}

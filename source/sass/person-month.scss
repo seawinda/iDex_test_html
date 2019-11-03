@@ -1,0 +1,150 @@
+.person-month {
+  display: flex;
+  justify-content: center;
+}
+
+.person-month__week {
+  width: 8px;
+  height: 16px;
+  margin-right: 2px;
+  position: relative;
+  display: flex;
+
+  &:before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    background: #EAF9FF;
+    z-index: 0;
+  }
+
+  &:first-child:before {
+    bottom: 0;
+    top: auto;
+  }
+
+  &_inactive {
+    &:before {
+      background: #F6F6F6;
+    }
+  }
+
+  &_1 {
+    &:before {
+      height: 3px;
+    }
+  }
+
+  &_2 {
+    &:before {
+      height: 5px;
+    }
+  }
+
+  &_3 {
+    &:before {
+      height: 7px;
+    }
+  }
+
+  &_4 {
+    &:before {
+      height: 9px;
+    }
+  }
+
+  &_5 {
+    &:before {
+      height: 11px;
+    }
+  }
+
+  &_6 {
+    &:before {
+      height: 13px;
+    }
+  }
+
+
+
+  &_start2 {
+    padding-top: 3px;
+  }
+
+  &_start3 {
+    padding-top: 5px;
+  }
+
+  &_start4 {
+    padding-top: 7px;
+  }
+
+  &_start5 {
+    padding-top: 9px;
+  }
+
+  &_start6 {
+    padding-top: 11px;
+  }
+
+  &_start7 {
+    padding-top: 13px;
+  }
+
+  &_end1 {
+    padding-bottom: 13px;
+  }
+
+  &_end2 {
+    padding-bottom: 11px;
+  }
+
+  &_end3 {
+    padding-bottom: 9px;
+  }
+
+  &_end4 {
+    padding-bottom: 7px;
+  }
+
+  &_end5 {
+    padding-bottom: 5px;
+  }
+
+  &_end6 {
+    padding-bottom: 3px;
+  }
+
+  &_red {
+    &:after {
+      content: "";
+      width: 8px;
+      background-color: #F16953;
+      z-index: 1;
+    }
+  }
+
+  &_green {
+    &:after {
+      content: "";
+      width: 8px;
+      background-color: #1EBEB4;
+      z-index: 1;
+    }
+  }
+
+  &_orange {
+    &:after {
+      content: "";
+      width: 8px;
+      background-color: #FCC659;
+      z-index: 1;
+    }
+  }
+
+
+
+}

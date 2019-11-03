@@ -1,0 +1,59 @@
+.card {
+  position: absolute;
+  z-index: 100;
+  min-width: 345px;
+  display: none;
+
+  background: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(107, 107, 107, 0.50);
+  border-radius: 4px;
+  padding: 16px 16px 22px;
+}
+
+.card__person {
+  display: flex;
+}
+
+.card__photo {
+  width: 54px;
+  border-radius: 27px;
+  margin-right: 16px;
+}
+
+.card__name {
+  width: 90px;
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.card__info {
+  margin-top: 13px;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card__dates {
+  color: #000000;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 16px;
+    top: 0;
+    left: -20px;
+  }
+
+  &_green:after {
+    background: #1EBEB4;
+  }
+}
+
+.card__comment {
+  color: #AEAEAE;
+  line-height: 18px;
+  margin-top: 2px;
+}

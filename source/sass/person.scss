@@ -1,0 +1,31 @@
+.person__name {
+  width: 118px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+
+.person__photo {
+  width: 32px;
+  margin-right: 8px;
+  border-radius: 16px;
+}
+
+.person__limit {
+  text-align: center;
+  font-size: 12px;
+  width: 32px;
+}
+
+.person__month {
+  padding: 0 6px 0 8px;
+
+  &:last-child {
+    width: 58px;
+    padding: 0;
+  }
+}
