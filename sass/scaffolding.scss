@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-width: 320px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  color: $base-color;
+  background-color: $bg;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $base-color;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $base-color;
+  }
+
+  &.phone {
+    text-decoration: none;
+  }
+
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.page-wrapper {
+  max-width: 1078px;
+  margin-top: 81px;
+  background-color: #393A3F;
+  padding-left: 100px;
+
+  @media screen and (max-width: $tablet-width) {
+    max-width: auto;
+    margin-top: 0;
+    padding-left: 0;
+    background: none;
+  }
+}
+
+.page-header {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+.page-main {
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+.button {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  min-height: 45px;
+  text-decoration: none;
+  padding: 16px 42px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 14px;
+  max-width: 100%;
+  vertical-align: center;
+  background-color: #556080;
+  color: #CACACA;
+  border-radius: 2px;
+  border: none;
+
+  &_active,
+  &_active:hover,
+  &_active:active {
+    background-color: #556080;
+    color: #CACACA;
+    cursor: default;
+  }
+
+  &_inactive {
+    background-color: #fff;
+    color: #556080;
+
+    &:hover,
+    &:active {
+      background-color: #556080;
+      color: #CACACA;
+    }
+  }
+}
